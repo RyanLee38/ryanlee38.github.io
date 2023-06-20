@@ -6,7 +6,7 @@
   <link href="https://ryanlee38.github.io/atom.xml" rel="self"/>
   
   <link href="https://ryanlee38.github.io/"/>
-  <updated>2023-06-19T16:28:28.770Z</updated>
+  <updated>2023-06-20T02:03:55.321Z</updated>
   <id>https://ryanlee38.github.io/</id>
   
   <author>
@@ -21,12 +21,12 @@
     <link href="https://ryanlee38.github.io/2023/06/20/PyTorch%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%A7%A3%E6%9E%90/"/>
     <id>https://ryanlee38.github.io/2023/06/20/PyTorch%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%A7%A3%E6%9E%90/</id>
     <published>2023-06-19T16:25:43.000Z</published>
-    <updated>2023-06-19T16:28:28.770Z</updated>
+    <updated>2023-06-20T02:03:55.321Z</updated>
     
-    <content type="html"><![CDATA[<p>此处补充</p>]]></content>
+    <content type="html"><![CDATA[<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">TORCH_API</span> ryanlee &#123;</span><br><span class="line">  <span class="keyword">using</span> schema = at::<span class="built_in">Tensor</span> (<span class="type">const</span> at::Tensor &amp;);</span><br><span class="line">  <span class="keyword">using</span> ptr_schema = schema*;</span><br><span class="line">  <span class="comment">// See Note [static constexpr char* members for windows NVCC]</span></span><br><span class="line">  <span class="built_in">STATIC_CONSTEXPR_STR_INL_EXCEPT_WIN_CUDA</span>(name, <span class="string">&quot;aten::ryanlee&quot;</span>)</span><br><span class="line">  <span class="built_in">STATIC_CONSTEXPR_STR_INL_EXCEPT_WIN_CUDA</span>(overload_name, <span class="string">&quot;&quot;</span>)</span><br><span class="line">  <span class="built_in">STATIC_CONSTEXPR_STR_INL_EXCEPT_WIN_CUDA</span>(schema_str, <span class="string">&quot;ryanlee(Tensor self) -&gt; Tensor&quot;</span>)</span><br><span class="line">  <span class="function"><span class="type">static</span> at::Tensor <span class="title">call</span><span class="params">(<span class="type">const</span> at::Tensor &amp; self)</span></span>;</span><br><span class="line">  <span class="function"><span class="type">static</span> at::Tensor <span class="title">redispatch</span><span class="params">(c10::DispatchKeySet dispatchKeySet, <span class="type">const</span> at::Tensor &amp; self)</span></span>;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
     
     
-    <summary type="html">PyTorch后端的源码解析逻辑分析</summary>
+    <summary type="html">PyTorch后端的C++源码解析逻辑分析</summary>
     
     
     
